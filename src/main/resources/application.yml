@@ -1,0 +1,8 @@
+server:
+  port: 8088 #Puerto en el que se ejecutara la aplicacion
+spring:
+  application:
+    name: backend-coldIt
+  data:
+    mongodb: #Configuracion de la url de conexion a la base de datos
+      uri: mongodb://${DB_HOST:127.0.0.1:27017}/${DB_DATABASE:backend-coldIt}
